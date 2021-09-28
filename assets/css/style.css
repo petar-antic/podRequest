@@ -12,6 +12,7 @@ body {
 }
 body .container {
   background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("/assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
 }
 body .container .logo {
   text-align: center;
@@ -102,10 +103,10 @@ body .bgDots {
 @media only screen and (min-width: 768px) {
   body .container {
     background: url("/assets/tablet/image-host.jpg");
-    background-repeat: no-repeat;
     background-size: auto;
     background-position-x: right;
     background-position-y: -25px;
+    background-repeat: no-repeat;
   }
   body .container .logo {
     text-align: left;
@@ -180,6 +181,8 @@ body .bgDots {
   body .container .logo {
     top: -10px;
     padding-bottom: 103px;
+  }
+  body .container .logo img {
     margin-top: -28px;
   }
   body .container main {
@@ -210,7 +213,7 @@ body .bgDots {
   body .bgDots {
     padding: 0px;
     right: 0px;
-    margin-top: -195px;
+    margin-top: -182px;
   }
 }
 

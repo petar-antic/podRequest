@@ -29,6 +29,7 @@ body {
   .container {
     background: linear-gradient($backgroundMobile, $backgroundMobile),
       url("/assets/mobile/image-host.jpg");
+    background-repeat: no-repeat;
     .logo {
       text-align: center;
       margin: 62px auto 0px auto;
@@ -121,10 +122,10 @@ body {
   body {
     .container {
       background: url("/assets/tablet/image-host.jpg");
-      background-repeat: no-repeat;
       background-size: auto;
       background-position-x: right;
       background-position-y: -25px;
+      background-repeat: no-repeat;
       .logo {
         text-align: left;
         padding-left: 39px;
@@ -202,7 +203,9 @@ body {
       .logo {
         top: -10px;
         padding-bottom: 103px;
-        margin-top: -28px;
+        img {
+          margin-top: -28px;
+        }
       }
       main {
         max-width: 723px;
@@ -239,7 +242,7 @@ body {
     .bgDots {
       padding: 0px;
       right: 0px;
-      margin-top: -195px;
+      margin-top: -182px;
     }
   }
 }
