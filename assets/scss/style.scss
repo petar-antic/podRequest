@@ -1,0 +1,245 @@
+// // Typografhy
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
+
+// // Colors
+
+$green: #54e6af;
+$darkGray: #2c344b;
+$black: #121725;
+$white: #ffffff;
+$lightGray: #5a668a;
+$silver: #c2cbe5;
+$warning: #fb3e3e;
+
+$backgroundMobile: rgba(18, 23, 37, 0.9);
+
+$fontInput: rgba(255, 255, 255, 0.5);
+$buttonHover: #b3ffe2;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background: $black;
+  overflow: hidden;
+  .container {
+    background: linear-gradient($backgroundMobile, $backgroundMobile),
+      url("/assets/mobile/image-host.jpg");
+    .logo {
+      text-align: center;
+      margin: 62px auto 0px auto;
+    }
+    main {
+      padding: 57px 24px 94px 24px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $green;
+        font-weight: 300;
+        span {
+          color: $white;
+        }
+      }
+      p {
+        padding: 16px 0px 33px 0px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $silver;
+        font-weight: 300;
+      }
+      .form {
+        order: 1;
+        .inputGroup {
+          padding: 48px 0px 94px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          input,
+          button {
+            border-radius: 28px;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 700;
+          }
+          input {
+            margin-bottom: 16px;
+            padding: 9px 0px 9px 32px;
+            background-color: $darkGray;
+            color: $fontInput;
+            &:focus {
+              outline-style: none;
+            }
+          }
+          button {
+            color: $black;
+            background-color: $green;
+            padding: 9px 0px;
+          }
+          .error {
+            color: $warning;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 8px 0px 22px 20px;
+          }
+        }
+      }
+      .socialMedia {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          height: 17px;
+          color: $lightGray;
+          opacity: 0.5;
+        }
+        .google {
+          height: 11px;
+        }
+        .pocket {
+          height: 15px;
+        }
+      }
+    }
+  }
+  .bgDots {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    .container {
+      background: url("/assets/tablet/image-host.jpg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position-x: right;
+      background-position-y: -25px;
+      .logo {
+        text-align: left;
+        padding-left: 39px;
+      }
+      main {
+        margin: 152px 94px 0px 39px;
+        background-color: $black;
+        padding: 0px;
+        h1 {
+          padding-top: 93px;
+          text-align: left;
+          font-size: 48px;
+          line-height: 56px;
+        }
+        p {
+          text-align: left;
+          padding: 31px 190px 40px 0px;
+          font-size: 18px;
+          line-height: 28px;
+        }
+        .form {
+          order: 0;
+          .inputGroup {
+            padding: 0px;
+            position: relative;
+            width: 427px;
+            input {
+              height: 56px;
+              margin-bottom: 64px;
+            }
+            button {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              width: 162px;
+              height: 46px;
+            }
+          }
+        }
+        .socialMedia {
+          padding-right: 99px;
+          img {
+            height: 29px;
+          }
+          .google {
+            height: 18px;
+          }
+          .pocket {
+            height: 26px;
+          }
+        }
+      }
+    }
+    .bgDots {
+      position: absolute;
+      display: block;
+      padding-top: 152px;
+      margin-top: -59px;
+      img {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    .container {
+      background: url("/assets/desktop/image-host.jpg");
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      background-position-x: right;
+      margin: 130px 0px 130px 165px;
+      .logo {
+        top: -10px;
+        padding-bottom: 103px;
+        margin-top: -28px;
+      }
+      main {
+        max-width: 723px;
+        margin: 0px;
+        h1 {
+          padding-top: 88px;
+          font-size: 52px;
+          line-height: 62px;
+        }
+        p {
+          padding: 24px 278px 40px 0px;
+        }
+        .form {
+          .inputGroup {
+            input {
+              margin: 0px;
+            }
+            button {
+              &:hover {
+                background-color: $buttonHover;
+                cursor: url("../pointer.png"), pointer;
+              }
+            }
+            .error {
+              padding: 8px 0px 22px 32px;
+            }
+          }
+          .socialMedia {
+            padding-right: 187px;
+          }
+        }
+      }
+    }
+    .bgDots {
+      padding: 0px;
+      right: 0px;
+      margin-top: -195px;
+    }
+  }
+}
