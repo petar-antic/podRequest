@@ -1,5 +1,6 @@
-// // Typografhy
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
+// // Typography
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 
 // // Colors
 
@@ -23,11 +24,11 @@ $buttonHover: #b3ffe2;
 }
 
 body {
-  font-family: "Chivo", sans-serif;
+  font-family: 'Chivo', sans-serif;
   background: $black;
   .container {
     background: linear-gradient($backgroundMobile, $backgroundMobile),
-      url("/assets/mobile/image-host.jpg");
+      url('/assets/mobile/image-host.jpg');
     background-repeat: no-repeat;
     .logo {
       text-align: center;
@@ -115,132 +116,132 @@ body {
   .bgDots {
     display: none;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  body {
-    .container {
-      background: url("/assets/tablet/image-host.jpg");
-      background-size: auto;
-      background-position-x: right;
-      background-position-y: -25px;
-      background-repeat: no-repeat;
-      .logo {
-        text-align: left;
-        padding-left: 39px;
-      }
-      main {
-        margin: 152px 94px 0px 39px;
-        background-color: $black;
-        padding: 0px;
-        h1 {
-          padding-top: 93px;
+  @media only screen and (min-width: 768px) {
+    body {
+      .container {
+        background: url('/assets/tablet/image-host.jpg');
+        background-size: auto;
+        background-position-x: right;
+        background-position-y: -25px;
+        background-repeat: no-repeat;
+        .logo {
           text-align: left;
-          font-size: 48px;
-          line-height: 56px;
+          padding-left: 39px;
         }
-        p {
-          text-align: left;
-          padding: 31px 190px 40px 0px;
-          font-size: 18px;
-          line-height: 28px;
-        }
-        .form {
-          order: 0;
-          .inputGroup {
-            padding: 0px;
-            position: relative;
-            width: 427px;
-            input {
-              height: 56px;
-              margin-bottom: 64px;
+        main {
+          margin: 152px 94px 0px 39px;
+          background-color: $black;
+          padding: 0px;
+          h1 {
+            padding-top: 93px;
+            text-align: left;
+            font-size: 48px;
+            line-height: 56px;
+          }
+          p {
+            text-align: left;
+            padding: 31px 190px 40px 0px;
+            font-size: 18px;
+            line-height: 28px;
+          }
+          .form {
+            order: 0;
+            .inputGroup {
+              padding: 0px;
+              position: relative;
+              width: 427px;
+              input {
+                height: 56px;
+                margin-bottom: 64px;
+              }
+              button {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 162px;
+                height: 46px;
+              }
             }
-            button {
-              position: absolute;
-              top: 5px;
-              right: 5px;
-              width: 162px;
-              height: 46px;
+          }
+          .socialMedia {
+            padding-right: 99px;
+            img {
+              height: 29px;
             }
-          }
-        }
-        .socialMedia {
-          padding-right: 99px;
-          img {
-            height: 29px;
-          }
-          .google {
-            height: 18px;
-          }
-          .pocket {
-            height: 26px;
+            .google {
+              height: 18px;
+            }
+            .pocket {
+              height: 26px;
+            }
           }
         }
       }
-    }
-    .bgDots {
-      position: absolute;
-      display: block;
-      padding-top: 152px;
-      margin-top: -59px;
-      img {
-        margin-left: 30px;
+      .bgDots {
+        position: absolute;
+        display: block;
+        padding-top: 152px;
+        margin-top: -59px;
+        img {
+          margin-left: 30px;
+        }
       }
     }
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  body {
-    .container {
-      background: url("/assets/desktop/image-host.jpg");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position-x: right;
-      margin: 130px 0px 130px 165px;
-      .logo {
-        top: -10px;
-        padding-bottom: 103px;
-        img {
-          margin-top: -28px;
-        }
-      }
-      main {
-        max-width: 723px;
-        margin: 0px;
-        h1 {
-          padding-top: 88px;
-          font-size: 52px;
-          line-height: 62px;
-        }
-        p {
-          padding: 24px 278px 40px 0px;
-        }
-        .form {
-          .inputGroup {
-            input {
-              margin: 0px;
-            }
-            button {
-              &:hover {
-                background-color: $buttonHover;
-                cursor: url("../pointer.png"), pointer;
-              }
-            }
-            .error {
-              padding: 8px 0px 22px 32px;
-            }
+  @media only screen and (min-width: 1200px) {
+    body {
+      .container {
+        background: url('/assets/desktop/image-host.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-x: right;
+        margin: 130px 0px 130px 165px;
+        .logo {
+          top: -10px;
+          padding-bottom: 103px;
+          img {
+            margin-top: -28px;
           }
         }
-        .socialMedia {
-          padding-right: 187px;
+        main {
+          max-width: 723px;
+          margin: 0px;
+          h1 {
+            padding-top: 88px;
+            font-size: 52px;
+            line-height: 62px;
+          }
+          p {
+            padding: 24px 278px 40px 0px;
+          }
+          .form {
+            .inputGroup {
+              input {
+                margin: 0px;
+              }
+              button {
+                &:hover {
+                  background-color: $buttonHover;
+                  cursor: url('../pointer.png'), pointer;
+                }
+              }
+              .error {
+                padding: 8px 0px 22px 32px;
+              }
+            }
+          }
+          .socialMedia {
+            padding-right: 187px;
+          }
         }
       }
-    }
-    .bgDots {
-      padding: 0px;
-      right: 0px;
-      margin-top: -182px;
+      .bgDots {
+        padding: 0px;
+        right: 0px;
+        margin-top: -182px;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -6,12 +6,12 @@
 }
 
 body {
-  font-family: "Chivo", sans-serif;
+  font-family: 'Chivo', sans-serif;
   background: #121725;
-  overflow: hidden;
 }
 body .container {
-  background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("/assets/mobile/image-host.jpg");
+  background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
+    url('/assets/mobile/image-host.jpg');
   background-repeat: no-repeat;
 }
 body .container .logo {
@@ -102,7 +102,7 @@ body .bgDots {
 
 @media only screen and (min-width: 768px) {
   body .container {
-    background: url("/assets/tablet/image-host.jpg");
+    background: url('/assets/tablet/image-host.jpg');
     background-size: auto;
     background-position-x: right;
     background-position-y: -25px;
@@ -172,7 +172,7 @@ body .bgDots {
 }
 @media only screen and (min-width: 1200px) {
   body .container {
-    background: url("/assets/desktop/image-host.jpg");
+    background: url('/assets/desktop/image-host.jpg');
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: right;
@@ -202,7 +202,7 @@ body .bgDots {
   }
   body .container main .form .inputGroup button:hover {
     background-color: #b3ffe2;
-    cursor: url("../pointer.png"), pointer;
+    cursor: url('../pointer.png'), pointer;
   }
   body .container main .form .inputGroup .error {
     padding: 8px 0px 22px 32px;
