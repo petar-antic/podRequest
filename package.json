@@ -5,7 +5,7 @@
     "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "format": "prettier --write \"assets/scss/style.scss\""
+        "format": "prettier --write \"assets/scss/*.scss\""
     },
     "repository": {
         "type": "git",

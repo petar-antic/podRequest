@@ -158,7 +158,7 @@ body .container main .form .inputGroup input {
 @media only screen and (min-width: 768px) {
   body .container main .form .inputGroup input {
     height: 56px;
-    margin-bottom: 64px;
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -195,9 +195,9 @@ body .container main .form .inputGroup .error {
   line-height: 14px;
   padding: 8px 0px 22px 20px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   body .container main .form .inputGroup .error {
-    padding: 8px 0px 22px 32px;
+    padding-bottom: 42px;
   }
 }
 body .container main .socialMedia {
@@ -248,7 +248,7 @@ body .bgDots {
   body .bgDots {
     position: absolute;
     display: block;
-    padding-top: 105px;
+    padding-top: 150px;
     padding-left: 30px;
   }
 }
