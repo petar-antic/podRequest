@@ -197,7 +197,7 @@ body .container main .form .inputGroup .error {
 }
 @media only screen and (min-width: 768px) {
   body .container main .form .inputGroup .error {
-    padding-bottom: 42px;
+    padding: 8px 0px 42px 32px;
   }
 }
 body .container main .socialMedia {
