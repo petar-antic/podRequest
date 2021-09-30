@@ -1,23 +1,23 @@
 {
-  "name": "podrequest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"assets/scss/style.scss\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petar-antic/podRequest.git"
-  },
-  "author": "petar_antic",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/petar-antic/podRequest/issues"
-  },
-  "homepage": "https://github.com/petar-antic/podRequest#readme",
-  "devDependencies": {
-    "prettier": "^2.4.1"
-  }
+    "name": "podrequest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"assets/scss/style.scss\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/petar-antic/podRequest.git"
+    },
+    "author": "petar_antic",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/petar-antic/podRequest/issues"
+    },
+    "homepage": "https://github.com/petar-antic/podRequest#readme",
+    "devDependencies": {
+        "prettier": "^2.4.1"
+    }
 }
